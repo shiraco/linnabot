@@ -1,0 +1,31 @@
+{
+    "name": "Linebot",
+    "description": "Linebot",
+    "website": "https://github.com/shiraco/linebot",
+    "repository": "https://github.com/shiraco/linebot",
+    "keywords": [
+        "python"
+    ],
+    "success_url": "/",
+    "env": {
+        "LINE_CHANNEL_ID": {
+            "description": "Channel ID",
+            "required": true
+        },
+        "LINE_CHANNEL_SECRET": {
+            "description": "Channel secret",
+            "required": true
+        },
+        "LINE_CHANNEL_MID": {
+            "description": "Channel MID",
+            "required": true
+        },
+        "DOCOMO_API_KEY": {
+            "description": "Docomo Developer API Key",
+            "required": true
+        }
+    },
+    "addons": [
+        "fixie:tricycle"
+    ]
+}

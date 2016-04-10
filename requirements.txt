@@ -1,0 +1,10 @@
+Cython==0.24
+doco==0.0.3
+falcon==0.3.0
+gevent==1.1.1
+greenlet==0.4.9
+gunicorn==19.4.5
+python-mimeparse==1.5.1
+requests==2.9.1
+simplejson==3.8.2
+six==1.10.0

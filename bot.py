@@ -15,10 +15,6 @@ logger.setLevel(DEBUG)
 logger.addHandler(handler)
 
 ENDPOINT_URI = 'https://trialbot-api.line.me/v1/events'
-PROXIES = {
-    'http': os.environ.get('FIXIE_URL', ''),
-    'https': os.environ.get('FIXIE_URL', '')
-}
 DOCOMO_API_KEY = os.environ.get('DOCOMO_API_KEY', '')
 
 
@@ -73,8 +69,7 @@ class CallbackResource(object):
             send_content = json.dumps(send_content)
             logger.debug('send_content: {}'.format(send_content))
 
-            res = requests.post(ENDPOINT_URI, data=send_content,
-                                headers=self.header, proxies=PROXIES)
+            res = requests.post(ENDPOINT_URI, data=send_content, headers=self.header)
             logger.debug('res: {} {}'.format(res.status_code, res.reason))
 
             resp.body = json.dumps('OK')

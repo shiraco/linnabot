@@ -24,8 +24,5 @@
             "description": "Docomo Developer API Key",
             "required": true
         }
-    },
-    "addons": [
-        "fixie:tricycle"
-    ]
+    }
 }

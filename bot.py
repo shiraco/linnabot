@@ -71,7 +71,7 @@ class CallbackResource(object):
                 send_content = json.dumps(send_content)
                 logger.debug('send_content: {}'.format(send_content))
 
-                res = requests.post(ENDPOINT_URI, data=send_content, headers=self.header)
+                res = requests.post(REPLY_ENDPOINT, data=send_content, headers=self.header)
                 logger.debug('res: {} {}'.format(res.status_code, res.reason))
 
                 resp.body = json.dumps('OK')

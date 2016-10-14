@@ -8,16 +8,8 @@
     ],
     "success_url": "/",
     "env": {
-        "LINE_CHANNEL_ID": {
-            "description": "Channel ID",
-            "required": true
-        },
-        "LINE_CHANNEL_SECRET": {
-            "description": "Channel secret",
-            "required": true
-        },
-        "LINE_CHANNEL_MID": {
-            "description": "Channel MID",
+        "LINE_CHANNEL_ACCESS_TOKEN": {
+            "description": "LINE Channel Access Token",
             "required": true
         },
         "DOCOMO_API_KEY": {

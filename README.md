@@ -5,7 +5,7 @@ JK linebot using docomo dialog api
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-See [Qiita]().
+See [Qiita](https://qiita.com/shiraco/items/58a33b878fa5f1180d75).
 
 ## Requirement
 
